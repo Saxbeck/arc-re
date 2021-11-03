@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/sceneFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.arcoresceneviewer.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_FirstFragment_to_sceneFragment"
+            app:destination="@id/sceneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sceneFragment"
+        android:name="com.example.arcoresceneviewer.SceneFragment"
+        android:label="fragment_scene"
+        tools:layout="@layout/fragment_scene" />
+</navigation>
